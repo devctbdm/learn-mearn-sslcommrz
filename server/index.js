@@ -60,6 +60,12 @@ const products = [
   },
 ];
 
+app.get('/', (req, res) => {
+  res.send('server is running');
+});
+
+
+
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
